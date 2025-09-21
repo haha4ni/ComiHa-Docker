@@ -1,0 +1,6 @@
+services:
+  myapp:
+    build: .
+    image: myapp:latest   # 👈 強制 image 名稱
+    ports:
+      - "8080:8080"
