@@ -69,3 +69,27 @@ docker compose up
 
 * React 首頁： [http://localhost:8080/](http://localhost:8080/)
 * Go API： [http://localhost:8080/api/hello](http://localhost:8080/api/hello)
+
+---
+
+## Docker 映像檔管理
+
+### 建立映像檔
+```bash
+docker build -t react-go-app .
+```
+
+### 匯出映像檔為 tar 檔案
+```bash
+docker save react-go-app -o react-go-app.tar
+```
+
+### 載入映像檔 (在其他機器上)
+```bash
+docker load -i react-go-app.tar
+```
+
+### 運行容器
+```bash
+docker run -p 8080:8080 react-go-app
+```
