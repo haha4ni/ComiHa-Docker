@@ -383,6 +383,7 @@ function AppContent() {
     return (
       <Box
         sx={{
+          minWidth: '100vw',
           minHeight: '100vh',
           display: 'flex',
           justifyContent: 'center',
